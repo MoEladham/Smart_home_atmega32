@@ -1,0 +1,59 @@
+/*
+ * Timer_Config.h
+ *
+ *  Created on: Jun 19, 2022
+ *      Author: mohm
+ */
+
+#ifndef MCAL_TIMER_TIMER_CONFIG_H_
+#define MCAL_TIMER_TIMER_CONFIG_H_
+
+/*
+ * choose prescaler :
+ *
+ * TIMER0_PRESCALER_TIMER_STOP
+ * TIMER0_PRESCALER_NO_PRESCALER
+ * TIMER0_PRESCALER_8
+ * TIMER0_PRESCALER_64
+ * TIMER0_PRESCALER_256
+ * TIMER0_PRESCALER_1024
+ * TIMER0_PRESCALER_EXT_CLK_FALLING_EDGE
+ * TIMER0_PRESCALER_EXT_CLK_RISING_EDGE
+ */
+
+
+#define TIMER0_PRESCALER			TIMER0_PRESCALER_8
+
+/*
+ * choose timer mode :
+ *
+ * TIMER0_NORMAL_MODE
+ * TIMER0_CTC_MODE
+ * TIMER0_FAST_PWM_MODE
+ * TIMER0_PHASE_CORRECT_PWM_MODE
+ */
+
+#define TIMER0_MODE					TIMER0_FAST_PWM_MODE
+
+/*
+ * choose oc0(output compare node) pin mode :
+ * Normal or CTC mode
+ *
+ * TIMER0_OC0_MODE_DISCONNECTED
+ * TIMER0_OC0_MODE_TOGGLE
+ * TIMER0_OC0_MODE_CLER
+ * TIMER0_OC0_MODE_SET
+ *
+ * choose oc0(output compare node) pin mode :
+ * Fast or phase correct PWM mode
+ *
+ * TIMER0_OC0_MODE_DISCONNECTED
+ * TIMER0_OC0_MODE_PWM_NON_INVERTING
+ * TIMER0_OC0_MODE_PWM_INVERTING
+ *
+ */
+
+#define TIMER0_OC0_PIN_MODE			TIMER0_OC0_MODE_PWM_INVERTING
+
+
+#endif /* MCAL_TIMER_TIMER_CONFIG_H_ */
